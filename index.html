@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>What is an array</h2>
+    <p>Array is a data structure which consists of collection of elements.This elements can be accessed by individual index or keys</p>
+    <h3>Example:
+        <pre>
+        const array=[1,2,3,4]
+        
+        for(i=0 ;i< array.length ;i++) {
+            console.log(array[i])
+        }
+        output:1 2 3 4
+    </pre>
+    </h3>
+
+    <h2>Map Method</h2>
+    <p>Map is an array method used to itterate over the elements of the array and it returns the new array. </p>
+    <h3>Example: <pre>
+        const array=[1,2,3,4,5]
+        const NewArray=array.map((result)=>{
+                 result+2
+        })
+        console.log(NewArray)
+
+        Output:[3,4,5,6,7]
+    </pre></h3>
+
+    <h2>Filter Method</h2>
+    <p>Filter is an array method used to itterate over the elements of the array with conditions and it returns the new array.The elements which are out of the conditions are not displayed in the new array </p>
+    <h3>Example: <pre>
+        const array=[1,2,3,4,5]
+        const NewArray=array.filter((result)=>
+                 result>1
+        )
+        console.log(NewArray)
+
+        Output:[2,3,4,5]
+    </pre></h3>
+
+    <h2>Reduce Method</h2>
+    <p>Reduce is an array method used to itterate over the elements of the array and it returns the new array with the sum of elements .The call back function takes two parameters accumulative and current values.In this we have to set the initial value and to that initial value the sum of elements value will be added . </p>
+
+    <h3>Example: <pre>
+       var ArrayReduce=[20,30,40,50]
+       var ArrayReduce1=ArrayReduce.reduce((acc,curr)=>
+          acc+curr 
+       ,10);
+       console.log(ArrayReduce1)
+
+        Output:150
+    </pre></h3>
+
+    <h2>Push Method</h2>
+    <p>Push is an array method used to add the element at the end of the array </p>
+    <h3>Example:<pre>
+        const array=[1,2,3,4,5]
+        array.push(6);
+        console.log(array);
+        Output:[1,2,3,4,5,6] //New element will be added at the last.
+    </pre></h3>
+
+    <h2>Pop Method</h2>
+    <p>Pop is an array method used to remove the element at the end of the array </p>
+    <h3>Example:<pre>
+        const array=[1,2,3,4,5]
+        array.pop(5);
+        console.log(array);
+        Output:[1,2,3,4] //The element gets deleted  from  the last.
+    </pre></h3>
+
+    <h2>unshift Method</h2>
+    <p>unshift is an array method used to add the element at the beginning of the array </p>
+    <h3>Example:<pre>
+        const array=[1,2,3,4]
+        array.unshift (5);
+        console.log(array);
+        Output:[5,1,2,3,4] //The element gets added at  the first index
+    </pre></h3>
+
+    <h2>shift Method</h2>
+    <p>shift is an array method used to rempve the element from the  beginning of the array </p>
+    <h3>Example:<pre>
+        const array=[1,2,3,4]
+        array.shift (1);
+        console.log(array);
+        Output:[2,3,4] //The element gets deleted  from  the first index
+    </pre></h3>
+
+    <h2>Some Method</h2>
+    <p>Some is an array method checks the elements from the given condition and returns Boolen value.if condition satisfied for one element it will return true </p>
+    <h3>Example:<pre>
+        var arraySome=[1,2,3,4,5]
+        var ArraySome1=arraySome.some(result=>result>1)
+        console.log(ArraySome1)
+    OutPut:true.
+    </pre></h3>
+
+    <p>Every is an array method checks the elements from the given condition and returns Bool
+    <h2>Every Method</h2>en value.if condition satisfied for all elements  then it will return true or it will return false</p>
+    <h3>Example:<pre>
+        var arraySome=[1,2,3,4,5]
+        var ArraySome1=arraySome.every(result=>result>1)
+        console.log(ArraySome1)
+    OutPut:false.
+    </pre></h3>
+
+    <h2>Slice Method</h2>
+    <p>Slice is a array method which returns selected elements from the array as per the starting index and end index.</p>
+    <h3>Example:<pre>
+        var arr=[1,2,3,4];
+        var data=arr.slice(0,3);
+        console.log(data);
+
+        Output:
+        1 2 3
+    </pre></h3>
+
+    <h2>IndexOf method</h2>
+    <p>By using IndexOf Method we can directly specify index of particular element from the given array </p>
+    <h3>Example:<pre>
+        const ArrayIndex=[1,2,3,4]
+        console.log(IndexOf[2]);
+
+        Output:1
+    </pre></h3>
+        
+       
+
+    <script src="./script.js"></script>
+</body>
+</html>
